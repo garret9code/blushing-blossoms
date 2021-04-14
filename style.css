@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    color: #fff;
+    line-height: 1.5;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1, h2{
+    font-weight: 275;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+/*navbar*/
+.navbar{
+    background-color: #Fff;
+    color: #800000;
+    height: 70px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color: #880000;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar a:hover{
+    border-bottom: 3px #FFB6C1 solid;
+    color: #FFB6C1;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.logo{
+    width: 35%;
+}
+/*landing*/
+.landing{
+    background-image: url(blushland.PNG);
+    background-size: cover;
+    /*parallax scroll*/
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 300px 200px;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto;
+}
+.landing h1{
+    text-align: center;
+    font-size: 70px;
+    color:#000;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 3px;
+    font-family: 'Playball', cursive;
+    padding-bottom: 50px;
+    display:flex;
+}
+.land-btn{
+    padding: 20px 600px;
+    margin: 10px 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 25px;
+    cursor: pointer;
+    background:transparent;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    border:solid #000 2px;
+    border-radius: 5px;
+    align-content: center;
+}
+.btn:hover{
+    cursor: pointer;
+    border: solid #800000 2px;
+    border-radius: 5px;
+    color: #800000;
+    background-color: #fff;
+}
+
+/*centerpieces*/
+.centerpieces{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 1px;
+}
+.content{
+    padding: 225px 325px;
+    border: #Fff;
+    background-color: #FAF0E6;
+    background-image: url(centerpiece.PNG);
+    background-size: cover;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; 
+    color:transparent;
+    opacity: 50%;
+    max-width: 100%;
+}
+.bouquet{
+    padding: 225px 325px;
+    border: #Fff;
+    background-color: #FAF0E6;
+    background-image: url(bouquet.PNG);
+    background-size: cover;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; 
+    color:transparent;
+    opacity: 50%;
+    max-width: 100%;
+}
+.corsage{
+    padding: 225px 325px;
+    border: #Fff;
+    background-color: #FAF0E6;
+    background-image: url(boutonniere.jpeg);
+    background-size: cover;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; 
+    color: transparent;
+    opacity: 50%;
+    max-width: 100%;
+}
+.wreath{
+    padding: 225px 325px;
+    border: #Fff;
+    background-color: #FAF0E6;
+    background-image: url(wreath.PNG);
+    background-size: cover;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; 
+    color:transparent;
+    opacity: 50%;
+    max-width: 100%;
+}
+.content:hover{
+    opacity: 100%;
+    color: #880000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bouquet:hover{
+    opacity: 100%;
+    color: #880000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.corsage:hover{
+    opacity: 100%;
+    color: #880000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wreath:hover{
+    opacity: 100%;
+    color: #880000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*.content h3{
+    text-align: center;
+    font: 50px;
+    color: #fff;
+    font-weight: bold;
+}*/
+.image{
+    padding: 10px;
+    background-color: #fff;
+}
+.image img{
+    width: 200px;
+    height: 315px;
+    align-self: center;
+}
+
+
+/*categories*/
+.categories{
+    margin: 20px 0;
+}
+.categories .card{ 
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px 20px 40px;
+    transition: transform 0.2s ease-in;
+}
+.categories .flex{
+    flex-wrap:wrap;
+}
+.categories-heading{
+    text-align: center;
+    color: #800000;
+    font-size: 50px;
+    padding-bottom: 10px;
+    font-family: 'Playball', cursive;
+}
+.categories .card:hover{
+    transform: translateY(-20px);
+}
+.categories h4{
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+/*testimonials*/
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 600px);
+}
+.testhead{
+    text-align: center;
+    font-family: 'Playball', cursive;
+    color: #800000;
+    font-size: 50px;
+    padding: 15px;
+    font-weight: bold;
+}
+.wedquote{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url('bridebouquets.jpeg');
+    background-size: cover;
+    /*parallax scroll*/
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 85%;
+    max-width: 100%;
+}
+.wedquote p{
+    font-size: 35px;
+    text-align: left;
+    padding-right: 800px;
+    padding-left: 50px;
+    padding-top: 110px;
+    color: #000;
+    font-weight: bold;
+}
+.gradquote{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url('pexels-katerina-holmes-5910942.jpg');
+    background-size: cover;
+    /*parallax scroll*/
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 85%;
+    max-width: 100%;
+}
+.gradquote p{
+    font-size: 35px;
+    text-align: right;
+    padding-left: 800px;
+    padding-right: 50px;
+    padding-top: 220px;
+    font-weight: bold;
+    color: #000;
+}
+/*about*/
+.about{
+    padding: 25px 25px;
+}
+.about h3{
+    font-family: 'Playball', 'cursive';
+    color: #800000;
+    font-size: 45px;
+    padding: 0 50px;
+}
+.about p{
+    color: #000;
+    font-size:25px;
+    padding: 0px 50px;
+}
+/*contact*/
+.contacthome{
+    background-color: #FFB6C1;
+    background-image: url('biel-morro-kcKiBcDTJt4-unsplash.jpg');
+    opacity: 85%;
+    background-size: cover;
+    /*parallax scroll*/
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 35px 50px;
+}
+.contactheader{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'Playball', cursive;
+}
+.contacthead h3{
+    color: #fff;
+}
+.contactinfo{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+.contactbutton{
+    align-content: center;
+    padding: 60px 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.btncontact{
+    color: #fff;
+    background-color: transparent;
+    border: solid 2px #fff;
+    border-radius: 5px;
+    align-content: center;
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btncontact:hover{
+    color: #800000;
+    background-color: #Fff;
+    border: solid 2px #800000;
+    cursor: pointer;
+}
+
+/*footer*/
+.footer{
+    background-color: #800000;
+    color: #fff;
+    padding: 0 45px;
+}
+.footer h1{
+    font-family: 'Playball', cursive;
+}
+.footer a{
+    color:#fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer .social-links a{
+    margin: 0 10px;
+}
+.footer .social-links a i{
+    color: #FFB6C1;
+}
+/*gallery*/
+.gallery-container{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 5px 1.5rem;
+}
+.pics{
+    padding: 5px;
+    border: #fff;
+    background-color: #FAF0E6;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.pics img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.gallery{
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+
+/*contact us page*/
+.contact{
+    display: grid;
+    grid-template-rows: 1/2fr 1fr 2fr;
+    gap: 5px;
+    grid-template-areas: 'contacthead'
+                          'information'
+                          'form';
+}
+.contacthead{
+    color:#800000;
+    align-content: center;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+    font-family: 'Playball', 'cursive';
+}
+.information{
+    color: #000;
+    font-size: 16px;
+    align-content: center;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 45px;
+}
+.form{
+    align-content: center;
+    width: 100%;
+    border: solid 3px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;  
+    background-image: url('biel-morro-kcKiBcDTJt4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 85%;
+    line-height: 55px;
+}
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='date']{
+    border:0;
+    border-bottom: 1px solid #000;
+    /*width: 65%;*/
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+#name, #email{
+    width: 500px;
+}
+.form input:focus{
+    outline:none;
+}
+.form textarea{
+    padding: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    display: block;
+    margin: auto;
+    width: 500px;
+    margin-bottom: 25px;
+}
+.btnsend{
+    color:#000;
+    background-color: #fff;
+    padding:10px;
+    margin: 5px 5px;
+    border: 2px solid #000;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+.btnsend:hover{
+    color: #fff;
+    background-color: #800000;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+.hidden{
+    visibility: hidden;
+    height:0;
+}
+/*utilities*/
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.card{
+    background-color: #800000;
+    border-radius: 0px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 15px;
+    color:#fff;
+}
+.text-center{
+    text-align:center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+@media (max-width: 768px){
+    /*centerpieces*/
+    .content{
+        max-width: 100%;
+        height: 100%;
+        padding: 100px;
+        opacity: 100%;
+        color:#800000;
+    }
+    .bouquet{
+        max-width: 100%;
+        height: 100%;
+        padding: 0px;
+        padding: 100px;
+        opacity: 100%;
+        color:#800000;
+    }
+    .corsage{
+        max-width:100%;
+        height: 100%;
+        padding: 100px;
+        opacity: 100%;
+        color:#800000;
+    }
+    .wreath{
+        /*max-width: 725px;*/
+        max-width: 100%;
+        height: 100%;
+        padding: 100px;
+        opacity: 100%;
+        color:#800000;
+    }
+}
+@media (min-width: 768px) and (max-width: 1366px){
+    .landing{
+        max-width: 1366px;
+        max-height: 100%;
+        padding: 30px 20px;
+        display: grid;
+    }
+    .landing h1{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .land-btn{
+        padding:5px;
+        margin: 0px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: center;
+    }
+    /*centerpieces*/
+    .content{
+        max-width: 100%;
+        height: 100%;
+        padding: 100px;
+        opacity: 100%;
+        color:#800000;
+    }
+    .bouquet{
+        max-width: 100%;
+        height: 100%;
+        padding: 0px;
+        padding: 100px;
+        opacity: 100%;
+        color:#800000;
+    }
+    .corsage{
+        max-width:100%;
+        height: 100%;
+        padding: 100px;
+        opacity: 100%;
+        color:#800000;
+    }
+    .wreath{
+        /*max-width: 725px;*/
+        max-width: 100%;
+        height: 100%;
+        padding: 100px;
+        opacity: 100%;
+        color:#800000;
+    }
+    /*testimonials*/
+    .wedquote p{
+        font-size: 35px;
+        text-align: left;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        color: #000;
+        font-weight: bold;
+    }
+    .gradquote p{
+        font-size: 35px;
+        text-align: right;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 40px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        color: #000;
+    }
+    /*contact*/
+    .contactbutton{
+        align-content: center;
+        padding: 0 15px;
+        padding-top: 95px;
+        margin-right: 10px;
+        margin-left: 10px;
+        justify-self: center;
+    }
+    .btncontact{
+        align-content: center;
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    /*contact us page*/
+    .form{
+        line-height: 65px;
+    }
+    .form input[type='text'],
+    .form input[type='email'],
+    .form input[type='date']{
+        padding: 15px;
+    }
+}
+/*mobile*/
+@media (max-width: 500px){
+    .navbar{
+        height: 110px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding: 10px;
+        background-color: #fff;
+    }
+    .logo{
+        width: 350px;
+        height: 150px;
+    }
+    /*landing*/
+    .landing{
+        max-width: 500px;
+        max-height: 100%;
+        padding: 15px 10px;
+        display: grid;
+    }
+    .landing h1{
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .land-btn{
+        padding: 20px;
+        margin: 0px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: center;
+    }
+    /*centerpieces*/
+    .centerpieces{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .content{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 0;
+        background-color: #FAF0E6;
+        font-size: 40px;
+        text-align: center; 
+        color:#800000;
+        opacity: 100%;
+        max-width: 500px;
+        height: 250px;
+        background-position: center;
+    }
+    .bouquet{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 0;
+        background-color: #FAF0E6;
+        font-size: 40px;
+        text-align: center; 
+        color:#800000;
+        opacity: 100%;
+        max-width: 500px;
+        height: 250px;
+        background-position: center;
+    }
+    .corsage{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 0;
+        background-color: #FAF0E6;
+        font-size: 50px;
+        text-align: center; 
+        color:#800000;
+        opacity: 100%;
+        max-width: 500px;
+        height: 250px;
+        background-position: center;
+    }
+    .wreath{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 0px;
+        background-color: #FAF0E6;
+        font-size: 40px;
+        text-align: center; 
+        color:#fff;
+        opacity: 100%;
+        max-width: 500px;
+        height: 250px;
+        background-position: center;
+    }
+    /*categories*/
+    .categories{
+        margin: 20px 0;
+    }
+    .categories .card{ 
+        text-align: center;
+        padding: 10px 20px;
+        margin: 10px 10px 20px;
+        transition: transform 0.2s ease-in;
+    }
+    /*testimonials*/
+    .wedquote p{
+        font-size: 25px;
+        text-align: left;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        color: #000;
+        font-weight: bold;
+    }
+    .gradquote p{
+        font-size: 25px;
+        text-align: right;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 40px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        color: #000;
+    }
+    /*contact*/
+    .contacthome{
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 35px 20px;
+    }
+    .contactheader{
+        font-size: 35px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .contactinfo{
+        color: #fff;
+        font-size: 25px;
+        text-align: left;
+    }
+    .contactbutton{
+        align-content: center;
+        padding: 0 15px;
+        padding-top: 150px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .btncontact{
+        align-content: center;
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    /*contact us page*/
+    #name, #email{
+        width: 350px;
+    }
+    .form textarea{
+        width: 350px;
+    }
+    .information{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
