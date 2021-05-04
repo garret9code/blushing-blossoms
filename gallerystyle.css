@@ -129,7 +129,7 @@ body{
     background-image: url('wreath.PNG');
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     .flowers{
         grid-template-areas: 'img5 img5 img2 img2'
                             'img1 img1 img4 img4'
